@@ -1,0 +1,229 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Prevent horizontal scroll */
+body {
+    overflow-x: hidden; /* This will prevent horizontal scrolling */
+}
+
+/* Body and html setup */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Main container that holds the content */
+.container {
+    max-width: 100%; /* Ensure it doesn't stretch beyond the screen */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Header and Navigation Styling */
+#nav {
+    background: url(images/nav_bg.gif) repeat-x;
+    height: 40px;
+    font-size: 17px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #d32f2f; /* Blood Red */
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%; /* Ensure the header spans full width */
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffd700; /* Gold Color */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.donate-btn {
+    background: #ffd700;
+    color: #d32f2f;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.donate-btn:hover {
+    background: white;
+    color: #d32f2f;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #a04a4a; /* Hero Section Background Color */
+    color: white;
+    padding: 100px;
+    text-align: center;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about {
+    padding: 40px;
+    background: #fff;
+    font-size: 2pc;
+}
+
+/* Donation Process Section */
+.process {
+    padding: 40px;
+    background: #c85d63; /* Donation Process Section Background */
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.step {
+    background: #d32f2f;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 200px;
+}
+
+/* Donation data */
+/* Blood Types Section */
+.bloodtypes {
+    padding: 50px 20px;
+    background: #f8f8f8; /* Light Gray Background */
+    text-align: center;
+}
+
+.bloodtypes h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #d32f2f; /* Blood Red */
+}
+
+/* Blood Group Container */
+.bloodgroup-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Blood Group Boxes */
+.bloodgroup {
+    background-color: #d32f2f; /* Blood Red */
+    color: white;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-transform: uppercase;
+    width: 150px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bloodgroup:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Drop shadow effect */
+}
+
+#b-plus {
+    background-color: #f39c12; /* Yellow for B+ */
+}
+
+#o-plus {
+    background-color: #2980b9; /* Blue for O+ */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bloodgroup-container {
+        flex-direction: column;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+}
+
+/* Moving Text */
+.moving-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #13dc1a; /* Blood Red */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: move-text 15s linear infinite;
+}
+
+@keyframes move-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Register Section */
+.register {
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #d9534f; /* Register Section Background */
+    color: white;
+}
+
+.register img {
+    width: 80%;
+    max-width: 600px;
+    padding: 40px;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    padding: 10px;
+}
