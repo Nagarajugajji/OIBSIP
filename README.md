@@ -1,4 +1,4 @@
-#🩸Blood & Organ Donation Landing Page  
+#🩸Blood & Organ Donation Web Page  
 
 ##About the Project :
 This is a **responsive landing page** designed to raise awareness about **blood and organ donation**. 
