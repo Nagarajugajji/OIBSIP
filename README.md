@@ -12,10 +12,7 @@ Built using **HTML & CSS**, it provides essential information, encourages partic
 
 ## Technologies Used  
 - **HTML5** for structure  
-- **CSS3** for styling and responsiveness  
-
-## Screenshots  
-_(Add a screenshot of your landing page here)_  
+- **CSS3** for styling and responsiveness 
 
 ## How to Use  
 1. Clone the repository:  
